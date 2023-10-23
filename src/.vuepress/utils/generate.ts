@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 export function getNavs() {
-	const rootPath = path.resolve() + "\\src\\" + "posts" + "\\";
+	const rootPath = path.resolve() + "\\src";
 	const excludes = [".vuepress", "intro.md", "README.md"];
 	const bars = fs.readdirSync(rootPath).filter((i) => !excludes.includes(i));
 	// 只能用绝对路径
@@ -29,8 +29,23 @@ export function getNavs() {
 	for (let nav of bars)
 		navs.push({
 			text: nav,
-			prefix: "/posts/" + nav + "/",
 			children: generateTree(rootPath + "\\" + nav),
 		});
+	console.log(navs);
 	return navs;
+}
+export function getSidebar() {
+	const rootPath = path.resolve() + "\\src";
+	const excludes = [".vuepress", "intro.md", "README.md"];
+	const bars = fs.readdirSync(rootPath).filter((i) => !excludes.includes(i));
+	const icon = {};
+	return bars.map((i) => {
+		return {
+			text: i,
+			prefix: i,
+			children: "structure",
+			icon: icon[i] || "book",
+		};
+	});
+	// return {};
 }

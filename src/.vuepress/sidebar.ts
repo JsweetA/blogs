@@ -1,16 +1,6 @@
 import { sidebar } from "vuepress-theme-hope";
-
-function generateSidebar() {}
+import { getSidebar } from "./utils/generate";
 
 export default sidebar({
-	"/": [
-		"",
-		{
-			text: "文章",
-			icon: "book",
-			prefix: "posts/",
-			children: "structure",
-		},
-		"intro",
-	],
+	"/": [...getSidebar()],
 });
