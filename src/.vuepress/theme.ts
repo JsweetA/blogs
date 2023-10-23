@@ -63,7 +63,6 @@ export default hopeTheme({
 	},
 
 	// page meta
-
 	editLink: false,
 
 	plugins: {

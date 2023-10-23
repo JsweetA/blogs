@@ -3,6 +3,7 @@ import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { gitPlugin } from "@vuepress/plugin-git";
 
+
 export default defineUserConfig({
 	base: "/",
 
