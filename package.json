@@ -3,7 +3,7 @@
 	"version": "2.0.0",
 	"description": "A project of vuepress-theme-hope",
 	"license": "MIT",
-	"type": "module",
+	"type": "module",	
 	"scripts": {
 		"build": "vuepress build src",
 		"deploy": "gh-pages -d dist -r https://github.com/JsweetA/blogs.git -b gh-pages",
