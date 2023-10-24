@@ -3,7 +3,6 @@ import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { gitPlugin } from "@vuepress/plugin-git";
 
-
 export default defineUserConfig({
 	base: "/",
 
@@ -15,8 +14,12 @@ export default defineUserConfig({
 	plugins: [
 		searchProPlugin({
 			// 索引全部内容
-			indexContent: true,
-			// 为分类和标签添加索引
+			// indexContent: true,
+			autoSuggestions: false,
+			resultHistoryCount: 0,
+			queryHistoryCount: 2,
+			// autoSuggestions: false,
+			// // 为分类和标签添加索引
 			customFields: [
 				{
 					getter: (page) => page.frontmatter.category,
@@ -31,6 +34,5 @@ export default defineUserConfig({
 		gitPlugin({
 			// 配置项
 		}),
-    
 	],
 });
