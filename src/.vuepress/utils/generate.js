@@ -50,7 +50,7 @@ export function getSidebar() {
 		} else {
 			sidebar[`/${i}/`] = subDirs.map((i) => {
 				return {
-					text: i,
+					text: `${i} ${fs.readdirSync(fullPath + "\\" + i).length}篇`,
 					prefix: i + "/",
 					children: "structure",
 					collapsible: true,

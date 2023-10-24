@@ -1,23 +1,21 @@
 {
 	"name": "hy-blog",
 	"version": "2.0.0",
-	"description": "A project of vuepress-theme-hope",
+	"description": "A project of personal blogs",
 	"license": "MIT",
-	"type": "module",	
 	"scripts": {
-		"build": "vuepress build src ",
+		"build": "vuepress build src",
 		"deploy": "gh-pages -d dist -r https://github.com/JsweetA/blogs.git -b gh-pages",
 		"clean-dev": "vuepress dev src --clean-cache",
-		"dev": "vuepress dev src --temp .temp",
+		"dev": "vuepress dev src",
 		"update-package": "yarn dlx vp-update"
 	},
 	"devDependencies": {
-		"@vuepress/bundler-vite": "^2.0.0-beta.67",
 		"@vuepress/client": "2.0.0-beta.67",
-		"@vuepress/plugin-docsearch": "^2.0.0-beta.67",
 		"@vuepress/plugin-git": "^2.0.0-beta.67",
-		"@vuepress/plugin-search": "^2.0.0-beta.67",
 		"gh-pages": "^6.0.0",
+		"rollup-plugin-visualizer": "^5.9.2",
+		"terser": "^5.22.0",
 		"vue": "^3.3.4",
 		"vuepress": "2.0.0-beta.67",
 		"vuepress-plugin-search-pro": "^2.0.0-beta.238",

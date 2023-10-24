@@ -1,7 +1,6 @@
 ---
 author: Jsweet
-title: AAACOyp
-date: 2020-01-01
+
 description: sdasd
 article: true
 category:
