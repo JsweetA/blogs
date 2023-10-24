@@ -2,7 +2,11 @@
 home: true
 layout: BlogHome
 icon: home
+heroText: Jsweet的宝藏屋
+tagline: 只是一个闲杂人所记录的闲杂事而已啦~
+bgImage: /assets/images/cover3.jpg
 title: Jsweet的博客
+heroFullScreen: true
 # projects:
 #   - icon: project
 #     name: 项目名称

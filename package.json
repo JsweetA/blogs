@@ -8,7 +8,7 @@
 		"build": "vuepress build src",
 		"deploy": "gh-pages -d dist -r https://github.com/JsweetA/blogs.git -b gh-pages",
 		"clean-dev": "vuepress dev src --clean-cache",
-		"dev": "vuepress dev src",
+		"dev": "vuepress dev src --debug",
 		"update-package": "yarn dlx vp-update"
 	},
 	"devDependencies": {
