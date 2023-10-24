@@ -1828,26 +1828,7 @@
   resolved "https://registry.npmmirror.com/@vue/shared/-/shared-3.3.6.tgz"
   integrity sha512-Xno5pEqg8SVhomD0kTSmfh30ZEmV/+jZtyh39q6QflrjdJCXah5lrnOLi9KB6a5k5aAHXMXjoMnxlzUkCNfWLQ==
 
-"@vuepress/bundler-vite@2.0.0-beta.67":
-  version "2.0.0-beta.67"
-  resolved "https://registry.npmmirror.com/@vuepress/bundler-vite/-/bundler-vite-2.0.0-beta.67.tgz"
-  integrity sha512-W6YXixxu2G+xPECPFvx4Tzv5fmpBYvApEYVw7qfSNf/5YZ6aeIfV0AMGJZvhk7R/KniofvBTGCjAMSK4fqKp8w==
-  dependencies:
-    "@vitejs/plugin-vue" "^4.3.3"
-    "@vuepress/client" "2.0.0-beta.67"
-    "@vuepress/core" "2.0.0-beta.67"
-    "@vuepress/shared" "2.0.0-beta.67"
-    "@vuepress/utils" "2.0.0-beta.67"
-    autoprefixer "^10.4.15"
-    connect-history-api-fallback "^2.0.0"
-    postcss "^8.4.28"
-    postcss-load-config "^4.0.1"
-    rollup "^3.28.1"
-    vite "~4.4.9"
-    vue "^3.3.4"
-    vue-router "^4.2.4"
-
-"@vuepress/bundler-vite@^2.0.0-beta.67":
+"@vuepress/bundler-vite@2.0.0-beta.67", "@vuepress/bundler-vite@^2.0.0-beta.67":
   version "2.0.0-beta.67"
   resolved "https://registry.npmjs.org/@vuepress/bundler-vite/-/bundler-vite-2.0.0-beta.67.tgz#a259fc47156afdfe494dc7a5af3578a1d602f7f3"
   integrity sha512-W6YXixxu2G+xPECPFvx4Tzv5fmpBYvApEYVw7qfSNf/5YZ6aeIfV0AMGJZvhk7R/KniofvBTGCjAMSK4fqKp8w==
