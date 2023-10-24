@@ -5,7 +5,7 @@ import { gitPlugin } from "@vuepress/plugin-git";
 
 export default defineUserConfig({
 	base: "/blogs/",
-	// dest: "./dist",
+	dest: "./dist",
 	lang: "zh-CN",
 	description: "JSweet的个人博客",
 	theme,
