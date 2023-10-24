@@ -6,11 +6,13 @@
 	"type": "module",
 	"scripts": {
 		"build": "vuepress build src",
+		"pub": "bash build.sh",
 		"clean-dev": "vuepress dev src --clean-cache",
 		"dev": "vuepress dev src --temp .temp",
 		"update-package": "yarn dlx vp-update"
 	},
 	"devDependencies": {
+		"@vuepress/bundler-vite": "^2.0.0-beta.67",
 		"@vuepress/client": "2.0.0-beta.67",
 		"@vuepress/plugin-docsearch": "^2.0.0-beta.67",
 		"@vuepress/plugin-git": "^2.0.0-beta.67",
