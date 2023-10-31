@@ -5,9 +5,9 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"build": "vuepress build src",
-		"pub": "yarn build && yarn deploy",
-		"deploy": "gh-pages -d dist -r https://github.com/JsweetA/blogs.git -b gh-pages",
+		"commit": "bash push.sh && yarn deploy",
+		"build:docs": "vuepress build src",
+		"deploy": "yarn build:docs && gh-pages -d dist -r https://github.com/JsweetA/blogs.git -b gh-pages",
 		"clean-dev": "vuepress dev src --clean-cache",
 		"dev": "vuepress dev src --temp .temp",
 		"update-package": "yarn dlx vp-update"
