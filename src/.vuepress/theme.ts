@@ -69,6 +69,7 @@ export default hopeTheme({
 	// page meta
 	editLink: false,
 	headerDepth: 4,
+	darkmode: "switch",
 	plugins: {
 		blog: {
 			excerptLength: 10,
