@@ -6,6 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "vuepress build src",
+		"pub": "yarn build && yarn deploy",
 		"deploy": "gh-pages -d dist -r https://github.com/JsweetA/blogs.git -b gh-pages",
 		"clean-dev": "vuepress dev src --clean-cache",
 		"dev": "vuepress dev src --temp .temp",

@@ -68,10 +68,10 @@ export default hopeTheme({
 
 	// page meta
 	editLink: false,
-
+	headerDepth: 4,
 	plugins: {
 		blog: {
-			excerptLength: 0,
+			excerptLength: 10,
 		},
 		comment: {
 			provider: "Giscus",
