@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const { blog_name } = { blog_name: "posts" };
+const { blog_name } = { blog_name: "闲人杂谈" };
 const rootPath = path.resolve() + "\\src";
 const excludes = [".vuepress", "intro.md", "README.md", `${blog_name}`];
 const bars = fs.readdirSync(rootPath).filter((i) => !excludes.includes(i));
