@@ -23,7 +23,9 @@ export function getSidebar() {
 	};
 	for (let i of bars) {
 		const fullPath = rootPath + "\\" + i;
-		const subDirs = fs.readdirSync(fullPath);
+		const subDirs = fs
+			.readdirSync(fullPath)
+			.filter((i) => !["png", "jpg"].includes(i.split(".")[1]));
 
 		if (subDirs[0].includes(".")) {
 			sidebar[`/${i}/`] = subDirs;
@@ -38,6 +40,6 @@ export function getSidebar() {
 			});
 		}
 	}
-
+	
 	return sidebar;
 }
