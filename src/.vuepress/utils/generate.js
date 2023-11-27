@@ -15,27 +15,7 @@ export function getNavs() {
 			text: i,
 			link: `/${i}/`,
 		});
-
 	return navs;
-	// function generateTree(directory) {
-	// 	return fs.readdirSync(directory).map((filename) => {
-	// 		const fullPath = path.join(directory, filename);
-	// 		const file = fs.statSync(fullPath);
-
-	// 		if (file.isDirectory()) {
-	// 			return {
-	// 				text: filename,
-	// 				prefix: filename + "/",
-	// 				children: generateTree(fullPath),
-	// 			};
-	// 		} else {
-	// 			return {
-	// 				link: filename,
-	// 				text: filename,
-	// 			};
-	// 		}
-	// 	});
-	// }
 }
 export function getSidebar() {
 	const sidebar = {
